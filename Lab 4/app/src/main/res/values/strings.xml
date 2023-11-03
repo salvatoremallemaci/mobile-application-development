@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Playgrounds Reservations</string>
+
+    <!-- SPORTS -->
+    <string name="sport_basketball">Basketball</string>
+    <string name="sport_football">Football</string>
+    <string name="sport_volleyball">Volleyball</string>
+    <string name="sport_golf">Golf</string>
+    <string name="tennis_court">Tennis court</string>
+    <string name="tennis_court_description">Hard surface</string>
+    <string name="basketball_court">Basketball court</string>
+    <string name="basketball_court_description">Internal court</string>
+    <string name="football_pitch">Football pitch</string>
+    <string name="football_pitch_description">11 external pitch</string>
+
+    <!-- PROFILE -->
+    <string name="user_profile">My profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="bio">Bio and sportive achievements</string>
+    <string name="phone">Phone</string>
+    <string name="age">Age</string>
+    <string name="years">%1$s years old</string>
+    <string name="gender">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="genderOther">Other</string>
+    <string name="location">Location</string>
+    <string name="my_sports">My sports</string>
+    <string name="my_courts">My courts</string>
+    <string name="sport_tennis">Tennis</string>
+    <string name="sport_empty">No sports selected yet</string>
+    <string name="add_sport">Add/Edit</string>
+    <string name="modify_profile">Modify</string>
+    <string name="save_profile">Save</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="save_sport">Save selected sports</string>
+    <string name="select_your_sports">Select your sports</string>
+    <string name="my_rating">My rating</string>
+
+    <!-- RESERVATIONS -->
+    <string name="reservation_box_title">Reservation at %1$s</string>
+    <string name="personal_reservation_box_title">Reservation on %1$s at %2$s</string>
+    <string name="reservation_box_duration">Duration: %1$d hours</string>
+    <string name="reservation_box_playground_name">Playground: %1$s</string>
+    <string name="new_reservation">Make a new reservation</string>
+    <string name="cancel_reservation">Delete reservation</string>
+    <string name="modify_reservation">Edit reservation</string>
+    <string name="home_title">Playgrounds Reservation home screen</string>
+    <string name="reservation_activity">Reservations Activity</string>
+    <string name="show_profile_activity">Show Profile Activity</string>
+    <string name="add_reservation">Add a reservation</string>
+    <string name="reservation">Reservation</string>
+    <string name="renting_equipment">Renting equipment</string>
+    <string name="playground_name">Playground name</string>
+    <string name="sport_type">Sport type</string>
+    <string name="add_button">+</string>
+    <string name="date">Date</string>
+    <string name="duration">Duration</string>
+    <string name="switch_title">Switch</string>
+    <string name="my_reservations">My reservations</string>
+    <string name="playgrounds_availability">Playgrounds availability</string>
+    <string name="delete_reservation_title">Reservation cancellation</string>
+    <string name="delete_reservation_message">Are you sure you want to cancel the reservation?</string>
+    <string name="delete_reservation_cancel_button">Cancel</string>
+    <string name="delete_reservation_delete_button">Delete</string>
+    <string name="rate_court">Rate Court</string>
+    <string name="edit_reservation_hours">Time: </string>
+    <string name="edit_reservation_duration">Duration: </string>
+    <string name="add_reservation_court">Court: </string>
+    <string name="optional_description_rating">Add a description (optional)</string>
+    <string name="rating_label">Rating:</string>
+    <string name="title_activity_test_compose">TestComposeActivity</string>
+    <string name="title_activity_rating_playgrounds">RatingPlaygrounds</string>
+    <string name="save_rating">Save Rating</string>
+</resources>

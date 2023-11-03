@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Playgrounds Reservations</string>
+
+    <!-- SPORTS-->
+    <string name="sport_tennis">Tennis</string>
+    <string name="sport_basketball">Pallacanestro</string>
+    <string name="sport_football">Calcio</string>
+    <string name="sport_volleyball">Pallavolo</string>
+    <string name="sport_golf">Golf</string>
+    <string name="tennis_court">Campo da tennis</string>
+    <string name="tennis_court_description">Superficie in cemento</string>
+    <string name="basketball_court">Campo da basket</string>
+    <string name="basketball_court_description">Superficie interna in parquet</string>
+    <string name="football_pitch">Campo da calcio</string>
+    <string name="football_pitch_description">Campo erba sintetico a 11</string>
+    <string name="volleyball_court">Campo da pallavolo</string>
+    <string name="volleyball_court_description">Superficie interna in parquet</string>
+    <string name="golf_court">Campo da golf</string>
+    <string name="golf_court_description">Struttura esterna</string>
+
+    <!-- HOME SCREEN -->
+    <string name="home_title">Benvenuto!</string>
+    <string name="home_subtitle">Esplora la disponibilità dei campi o accedi per scoprire tutte le funzionalità!</string>
+    <string name="show_playgrounds_availability">Esplora la disponibilità dei campi (non funziona)</string>
+    <string name="login">Login</string>
+    <string name="login_email">Accedi con la tua email</string>
+
+    <!-- CALENDAR FRAGMENT TUTORIAL -->
+    <string name="cal_frag_options_menu_tutorial">Accedi al tuo profilo personale ed esplora la disponibilità dei campi</string>
+    <string name="cal_frag_calendar_tutorial">Visualizza le tue prenotazioni</string>
+    <string name="cal_frag_reservations_list_tutorial">Seleziona un giorno nel calendario: le tue prenotazioni per il giorno appariranno qui</string>
+
+    <!-- PROFILE -->
+    <string name="user_profile">Il mio profilo</string>
+    <string name="edit_profile">Modifica profilo</string>
+    <string name="full_name">Nome completo</string>
+    <string name="nickname">Nickname</string>
+    <string name="bio">Bio e successi sportivi</string>
+    <string name="phone">Telefono</string>
+    <string name="age">Età</string>
+    <string name="set_age">Imposta</string>
+    <string name="years">%1$d anni</string>
+    <string name="gender">Genere</string>
+    <string name="genderMale">Maschio</string>
+    <string name="genderFemale">Femmina</string>
+    <string name="genderOther">Altro</string>
+    <string name="location">Indirizzo</string>
+    <string name="my_sports">I miei sport</string>
+    <string name="my_courts">I miei campi</string>
+    <string name="sport_empty">Nessuno sport selezionato</string>
+    <string name="add_sport">Aggiungi/Modifica</string>
+    <string name="modify_profile">Modifica</string>
+    <string name="save_profile">Salva</string>
+    <string name="gallery">Galleria</string>
+    <string name="camera">Fotocamera</string>
+    <string name="save_sport">Salva gli sport selezionati</string>
+    <string name="select_your_sports">Seleziona i tuoi sport</string>
+    <string name="my_rating">La mia valutazione</string>
+    <string name="logout">Logout</string>
+
+    <!-- RESERVATIONS -->
+    <string name="reservation_box_title">Prenotazione alle ore %1$s</string>
+    <string name="personal_reservation_box_title">Prenotazione per il giorno %1$s alle ore %2$s</string>
+    <string name="reservation_box_duration">Durata: %1$d ore</string>
+    <string name="reservation_box_duration_single_hour">Durata: %1$d ora</string>
+    <string name="reservation_box_playground_name">Campo: %1$s</string>
+    <string name="new_reservation">Inserisci una nuova prenotazione</string>
+    <string name="cancel_reservation">Cancella la prenotazione</string>
+    <string name="modify_reservation">Modifica la prenotazione</string>
+    <string name="add_reservation">Aggiungi una prenotazione</string>
+    <string name="reservation">Prenotazione</string>
+    <string name="renting_equipment">Noleggio attrezzature</string>
+    <string name="playground_name">Nome campo</string>
+    <string name="sport_type">Tipo sport</string>
+    <string name="add_button">+</string>
+    <string name="date">Data</string>
+    <string name="duration">Durata</string>
+    <string name="switch_title">Cambia</string>
+    <string name="my_reservations">Le mie prenotazioni</string>
+    <string name="playgrounds_availability">Disponibilità dei campi</string>
+    <string name="delete_reservation_title">Cancellazione prenotazione</string>
+    <string name="delete_reservation_message">Sei sicuro di voler cancellare la prenotazione?</string>
+    <string name="delete_reservation_cancel_button">Annulla</string>
+    <string name="delete_reservation_delete_button">Cancella</string>
+    <string name="rate_court">Valuta il campo</string>
+    <string name="edit_reservation_hours">Orario: </string>
+    <string name="edit_reservation_duration">Durata: </string>
+    <string name="add_reservation_court">Campo: </string>
+    <string name="optional_description_rating">Aggiungi una descrizione (facoltativa)</string>
+    <string name="rating_label">Valutazione:</string>
+    <string name="title_activity_test_compose">TestComposeActivity</string>
+    <string name="title_activity_rating_playgrounds">RatingPlaygrounds</string>
+    <string name="save_rating">Salva Rating</string>
+    <string name="see_ratings">Guarda i ratings</string>
+    <string name="optional_description_entered">Nessuna descrizione opzionale inserita</string>
+    <string name="my_review_title">LA MIA VALUTAZIONE:</string>
+    <string name="no_ratings_yet">NON È STATO ANCORA LASCIATO ALCUN RATING</string>
+    <string name="ratings_playground">Valutazioni</string>
+    <string name="loading">Caricamento…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

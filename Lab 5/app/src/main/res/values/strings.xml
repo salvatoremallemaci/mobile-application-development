@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Playgrounds Reservations</string>
+
+    <!-- SPORTS -->
+    <string name="sport_basketball">Basketball</string>
+    <string name="sport_football">Football</string>
+    <string name="sport_volleyball">Volleyball</string>
+    <string name="sport_golf">Golf</string>
+    <string name="tennis_court">Tennis court</string>
+    <string name="tennis_court_description">Hard surface</string>
+    <string name="basketball_court">Basketball court</string>
+    <string name="basketball_court_description">Internal court</string>
+    <string name="football_pitch">Football pitch</string>
+    <string name="football_pitch_description">11 external pitch</string>
+    <string name="volleyball_court">Volleyball court</string>
+    <string name="volleyball_court_description">Internal court</string>
+    <string name="golf_court">Golf court</string>
+    <string name="golf_court_description">External field</string>
+
+    <!-- HOME SCREEN -->
+    <string name="home_title">Welcome!</string>
+    <string name="home_subtitle">Explore the playgrounds availability or login to discover all the features!</string>
+    <string name="show_playgrounds_availability">Explore playgrounds availability (non funziona)</string>
+    <string name="login">Login</string>
+    <string name="login_email">Sign in with email</string>
+
+    <!-- CALENDAR FRAGMENT TUTORIAL -->
+    <string name="cal_frag_options_menu_tutorial">Access your personal profile and explore the playgrounds availability</string>
+    <string name="cal_frag_calendar_tutorial">Explore your reservations</string>
+    <string name="cal_frag_reservations_list_tutorial">Select a day in the calendar: all your reservations for the day will appear here</string>
+
+    <!-- PROFILE -->
+    <string name="user_profile">My profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="bio">Bio and sportive achievements</string>
+    <string name="phone">Phone</string>
+    <string name="age">Age</string>
+    <string name="set_age">Set</string>
+    <string name="years">%1$d years old</string>
+    <string name="gender">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="genderOther">Other</string>
+    <string name="location">Location</string>
+    <string name="my_sports">My sports</string>
+    <string name="my_courts">My courts</string>
+    <string name="sport_tennis">Tennis</string>
+    <string name="sport_empty">No sports selected yet</string>
+    <string name="add_sport">Add/Edit</string>
+    <string name="modify_profile">Modify</string>
+    <string name="save_profile">Save</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="save_sport">Save selected sports</string>
+    <string name="select_your_sports">Select your sports</string>
+    <string name="my_rating">My rating</string>
+    <string name="logout">Logout</string>
+
+    <!-- RESERVATIONS -->
+    <string name="reservation_box_title">Reservation at %1$s</string>
+    <string name="personal_reservation_box_title">Reservation on %1$s at %2$s</string>
+    <string name="reservation_box_duration">Duration: %1$d hours</string>
+    <string name="reservation_box_duration_single_hour">Duration: %1$d hour</string>
+    <string name="reservation_box_playground_name">Playground: %1$s</string>
+    <string name="new_reservation">Make a new reservation</string>
+    <string name="cancel_reservation">Delete reservation</string>
+    <string name="modify_reservation">Edit reservation</string>
+    <string name="add_reservation">Add a reservation</string>
+    <string name="reservation">Reservation</string>
+    <string name="renting_equipment">Renting equipment</string>
+    <string name="playground_name">Playground name</string>
+    <string name="sport_type">Sport type</string>
+    <string name="add_button">+</string>
+    <string name="date">Date</string>
+    <string name="duration">Duration</string>
+    <string name="switch_title">Switch</string>
+    <string name="my_reservations">My reservations</string>
+    <string name="playgrounds_availability">Playgrounds availability</string>
+    <string name="delete_reservation_title">Reservation cancellation</string>
+    <string name="delete_reservation_message">Are you sure you want to cancel the reservation?</string>
+    <string name="delete_reservation_cancel_button">Cancel</string>
+    <string name="delete_reservation_delete_button">Delete</string>
+    <string name="rate_court">Rate Court</string>
+    <string name="edit_reservation_hours">Time: </string>
+    <string name="edit_reservation_duration">Duration: </string>
+    <string name="add_reservation_court">Court: </string>
+    <string name="optional_description_rating">Add a description (optional)</string>
+    <string name="rating_label">Rating:</string>
+    <string name="title_activity_test_compose">TestComposeActivity</string>
+    <string name="title_activity_rating_playgrounds">RatingPlaygrounds</string>
+    <string name="save_rating">Save rating</string>
+    <string name="see_ratings">See ratings</string>
+    <string name="optional_description_entered">No optional description entered</string>
+    <string name="my_review_title">MY REVIEW:</string>
+    <string name="no_ratings_yet">NO RATINGS HAVE BEEN LEFT YET</string>
+    <string name="ratings_playground">Ratings</string>
+    <string name="loading">Loading…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

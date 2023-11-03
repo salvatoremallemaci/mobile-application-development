@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "271182306845",
+    "project_id": "playgrounds-reservations",
+    "storage_bucket": "playgrounds-reservations.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271182306845:android:57ca2718f66f9de747f0f4",
+        "android_client_info": {
+          "package_name": "it.polito.mad.playgroundsreservations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271182306845-cj319kri1l4pel6qj95k91fg0sm6kdl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.polito.mad.playgroundsreservations",
+            "certificate_hash": "af074315bf687a4a698c5556f23772b003e7f947"
+          }
+        },
+        {
+          "client_id": "271182306845-o0aprbcajrpd2geed5em6cv2q1efs0cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXyc3JBHr2Lci4qB5SJ87eLJkbwbxC9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271182306845-o0aprbcajrpd2geed5em6cv2q1efs0cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

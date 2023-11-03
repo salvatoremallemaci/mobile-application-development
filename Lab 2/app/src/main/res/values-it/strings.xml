@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShowProfileActivity</string>
+    <string name="full_name">Nome completo</string>
+    <string name="nickname">Nickname</string>
+    <string name="bio">Bio</string>
+    <string name="phone">Telefono</string>
+    <string name="age">Età</string>
+    <string name="years">%1$s anni</string>
+    <string name="gender">Genere</string>
+    <string name="genderMale">Maschio</string>
+    <string name="genderFemale">Femmina</string>
+    <string name="genderOther">Altro</string>
+    <string name="location">Indirizzo</string>
+    <string name="my_sports">I miei sport</string>
+    <string name="my_courts">I miei campi</string>
+    <string name="sport_tennis">Tennis</string>
+    <string name="sport_basketball">Pallacanestro</string>
+    <string name="sport_football">Calcio</string>
+    <string name="sport_volleyball">Pallavolo</string>
+    <string name="sport_golf">Golf</string>
+    <string name="sport_empty">Nessuno sport selezionato</string>
+    <string name="add_sport">Aggiungi/Modifica</string>
+    <string name="modify_profile">Modifica</string>
+    <string name="save_profile">Salva</string>
+    <string name="gallery">Galleria</string>
+    <string name="camera">Fotocamera</string>
+    <string name="save_sport">Salva gli sport selezionati</string>
+    <string name="select_your_sports">Seleziona i tuoi sport</string>
+    <string name="my_rating">La mia valutazione</string>
+    <string name="tennis_court">Campo da tennis</string>
+    <string name="tennis_court_description">Superficie in cemento</string>
+    <string name="basketball_court">Campo da basket</string>
+    <string name="basketball_court_description">Superficie interna in parquet</string>
+    <string name="football_pitch">Campo da calcio</string>
+    <string name="football_pitch_description">Campo erba sintetico a 11</string>
+</resources>

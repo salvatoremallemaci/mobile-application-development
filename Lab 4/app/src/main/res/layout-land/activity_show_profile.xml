@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:id="@+id/sidebar"
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageUserProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:src="@drawable/user_profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/secondaryVariant" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="20dp"
+                    android:rating="3.5"
+                    android:numStars="5"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/textFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="@string/full_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nickname_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textNickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/nickname"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bio_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/bio"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/gender"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/age"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/phone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textMySports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/my_sports"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold|italic" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTennis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_tennis"
+                        app:chipIcon="@drawable/tennis_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipBasketball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_basketball"
+                        app:chipIcon="@drawable/basketball_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFootball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_football"
+                        app:chipIcon="@drawable/football_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipVolleyball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_volleyball"
+                        app:chipIcon="@drawable/volleyball_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipGolf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_golf"
+                        app:chipIcon="@drawable/golf_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipEmpty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_empty"
+                        app:chipIconVisible="true" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textMyCourts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/my_courts"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold|italic" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tennis_court"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="10dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/tennis_court" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tennis_court_description"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/white"
+                            android:paddingTop="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_marginHorizontal="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/basketball_court"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="10dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/volleyball_court" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/basketball_court_description"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/white"
+                            android:paddingTop="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_shape"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="10dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/football_pitch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch_description"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/white"
+                            android:paddingTop="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- other views, with a total layout_weight of 2 -->
+
+</LinearLayout>

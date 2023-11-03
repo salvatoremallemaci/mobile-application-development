@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:id="@+id/sidebar"
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageUserProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/user_profile"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/secondaryVariant" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/camera"
+                        android:layout_gravity="center"
+                        app:tint="@color/white" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/editTextFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="@string/full_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bio_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <EditText
+                    android:id="@+id/editTextBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:inputType="text"
+                    android:hint="@string/bio"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioGenderMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genderMale"
+                        android:layout_marginHorizontal="5dp" />
+                    <RadioButton
+                        android:id="@+id/radioGenderFemale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genderFemale"
+                        android:layout_marginHorizontal="5dp" />
+                    <RadioButton
+                        android:id="@+id/radioGenderOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genderOther"
+                        android:layout_marginHorizontal="5dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/editTextAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:hint="@string/age"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Button
+                    android:id="@+id/dateOfBirthButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_age" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:minHeight="48dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:inputType="phone"
+                    android:autofillHints="phone"
+                    android:hint="@string/phone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_icon"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/primary" />
+
+                <EditText
+                    android:id="@+id/editTextLocation"
+                    android:minHeight="48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:inputType="textPostalAddress"
+                    android:autofillHints="postalAddress"
+                    android:hint="@string/location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/my_rating"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3.5"
+                    android:numStars="5"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textMySports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/my_sports"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold|italic" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTennis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_tennis"
+                        app:chipIcon="@drawable/tennis_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipBasketball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_basketball"
+                        app:chipIcon="@drawable/basketball_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFootball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_football"
+                        app:chipIcon="@drawable/football_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipVolleyball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_volleyball"
+                        app:chipIcon="@drawable/volleyball_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipGolf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/sport_golf"
+                        app:chipIcon="@drawable/golf_ball"
+                        app:chipIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="@string/add_sport"
+                        app:chipIcon="@drawable/plus_circle"
+                        app:chipIconVisible="true" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- other views, with a total layout_weight of 2 -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/loadingEditProfileFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/spinner_fragment" />
+</LinearLayout>
