@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Playgrounds Reservations</string>
+
+    <!-- SPORTS -->
+    <string name="sport_basketball">Basketball</string>
+    <string name="sport_football">Football</string>
+    <string name="sport_volleyball">Volleyball</string>
+    <string name="sport_golf">Golf</string>
+    <string name="tennis_court">Tennis court</string>
+    <string name="tennis_court_description">Hard surface</string>
+    <string name="basketball_court">Basketball court</string>
+    <string name="basketball_court_description">Internal court</string>
+    <string name="football_pitch">Football pitch</string>
+    <string name="football_pitch_description">11 external pitch</string>
+    <string name="volleyball_court">Volleyball court</string>
+    <string name="volleyball_court_description">Internal court</string>
+    <string name="golf_court">Golf court</string>
+    <string name="golf_court_description">External field</string>
+
+    <!-- HOME SCREEN -->
+    <string name="home_title">Welcome!</string>
+    <string name="home_subtitle">Explore the playgrounds availability or login to discover all the features!</string>
+    <string name="show_playgrounds_availability">Explore playgrounds availability</string>
+    <string name="login_signup">Login/Sign up</string>
+    <string name="login_email">Sign in with email</string>
+
+    <!-- CALENDAR FRAGMENT TUTORIAL -->
+    <string name="cal_frag_options_menu_tutorial">Access your personal profile and explore the playgrounds availability</string>
+    <string name="cal_frag_calendar_tutorial">Explore your reservations</string>
+    <string name="cal_frag_reservations_list_tutorial">Select a day in the calendar: all your reservations for the day will appear here</string>
+
+    <!-- PROFILE -->
+    <string name="user_profile">My profile</string>
+    <string name="reservation_creator_profile">Reservation creator\'s profile</string>
+    <string name="contact_profile">User Profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="bio">Bio and sportive achievements</string>
+    <string name="phone">Phone</string>
+    <string name="age">Age</string>
+    <string name="set_age">Set</string>
+    <string name="years">%1$d years old</string>
+    <string name="gender">Gender</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="genderOther">Other</string>
+    <string name="location">Location</string>
+    <string name="my_sports">My sports</string>
+    <string name="my_courts">My courts</string>
+    <string name="sport_tennis">Tennis</string>
+    <string name="sport_all">All sports</string>
+    <string name="region_all">All regions</string>
+    <string name="city_all">All cities</string>
+    <string name="sport_empty">No sports selected yet</string>
+    <string name="add_sport">Add/Edit</string>
+    <string name="modify_profile">Modify</string>
+    <string name="save_profile">Save</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="save_sport">Save selected sports</string>
+    <string name="select_your_sports">Select your sports</string>
+    <string name="my_rating">My rating</string>
+    <string name="logout">Logout</string>
+    <string name="age_toast">You need to be at least 14</string>
+    <string name="search_people">Search People</string>
+    <string name="add_contact">Add friend</string>
+    <string name="delete_contact">Delete friend</string>
+
+    <!-- RESERVATIONS -->
+    <string name="reservation_box_title">Reservation at %1$s</string>
+    <string name="personal_reservation_box_title">Reservation on %1$s at %2$s</string>
+    <string name="reservation_box_duration">Duration: %1$d hours</string>
+    <string name="reservation_box_duration_single_hour">Duration: %1$d hour</string>
+    <string name="reservation_box_playground_name">Playground: %1$s</string>
+    <string name="new_reservation">Make a new reservation</string>
+    <string name="cancel_reservation">Delete reservation</string>
+    <string name="modify_reservation">Edit reservation</string>
+    <string name="add_reservation">Add a reservation</string>
+    <string name="reservation">Reservation</string>
+    <string name="renting_equipment">Renting equipment</string>
+    <string name="playground_name">Playground name</string>
+    <string name="sport_type">Sport type</string>
+    <string name="price_string">Price</string>
+    <string name="add_button">+</string>
+    <string name="date">Date</string>
+    <string name="duration">Duration</string>
+    <string name="switch_title">Switch</string>
+    <string name="my_reservations">My reservations</string>
+    <string name="playgrounds_availability">Playgrounds availability</string>
+    <string name="delete_reservation_title">Reservation cancellation</string>
+    <string name="delete_reservation_message">Are you sure you want to cancel the reservation?</string>
+    <string name="delete_reservation_cancel_button">Cancel</string>
+    <string name="delete_reservation_delete_button">Delete</string>
+    <string name="rate_court">Rate Court</string>
+    <string name="edit_reservation_hours">Time: </string>
+    <string name="edit_reservation_duration">Duration: </string>
+    <string name="add_reservation_court">Playground: </string>
+    <string name="optional_description_rating">Add a description (optional)</string>
+    <string name="rating_label">Rating:</string>
+    <string name="title_activity_rating_playgrounds">Rate playground</string>
+    <string name="save_rating">Save rating</string>
+    <string name="see_ratings">See ratings</string>
+    <string name="optional_description_entered">No optional description entered</string>
+    <string name="my_review_title">MY REVIEW:</string>
+    <string name="no_ratings_yet">NO RATINGS HAVE BEEN LEFT YET</string>
+    <string name="no_ratings_yet_playground">No ratings have been left yet</string>
+    <string name="ratings_playground">Ratings</string>
+    <string name="loading">Loading…</string>
+    <string name="created_by">Created by </string>
+    <string name="price_with_currency">%1$d euros (total)</string>
+
+    <!-- INVITE FRIENDS -->
+    <string name="invite_friends">Invite friends</string>
+    <string name="search_users">Search all users</string>
+    <string name="invite_selected">Invite selected friends</string>
+    <string name="see_less">See less</string>
+    <string name="see_more">See more</string>
+    <string name="see_all">See all</string>
+    <string name="no_rating_for_sport">The user did not insert a personal rating for this sport.</string>
+    <string name="recently_invited">Recently invited</string>
+    <string name="your_friends">Your friends</string>
+    <string name="invited_for_this_reservation">Invited for this reservation</string>
+    <string name="cancel_participation">Cancel participation</string>
+    <string name="max_invited_friends">You have reached the maximum number of people you can invite</string>
+
+    <!-- PENDING INVITATIONS -->
+    <string name="pending_invitations">Pending invitations</string>
+    <string name="invited_by">Invited by %1$s</string>
+    <string name="total_price">Total price: %1$d €/h</string>
+    <string name="playground_address">Playground address: %1$s</string>
+    <string name="address_playground">Address: %1$s</string>
+    <string name="playground_location">Location: %1$s</string>
+    <string name="show_inviter_profile">Show %1$s\'s profile</string>
+    <string name="zero_invitations">Zero invitations found. Go and make one yourself!</string>
+    <string name="accept">Accept</string>
+    <string name="refuse">Refuse</string>
+    <string name="accepted">Accepted</string>
+    <string name="refused">Refused</string>
+    <string name="pending">Pending</string>
+
+    <!-- CHOOSE PLAYGROUNDS -->
+    <string name="recently_reserved">Recently reserved</string>
+    <string name="all_sports">All sports</string>
+    <string name="all_regions">All regions</string>
+    <string name="all_cities">All cities</string>
+    <string name="favorite_courts">Favorite courts</string>
+    <string name="choose_playground">Choose playground</string>
+    <string name="search_all_playgrounds">Search all playgrounds</string>
+    <string name="select_playground">Select playground</string>
+    <string name="price_per_hour">Price per hour</string>
+    <string name="price">%1$s €/h</string>
+    <string name="address">Address</string>
+    <string name="max_number_of_people">Maximum number of people</string>
+    <string name="n_people">%1$d people</string>
+    <string name="playgrounds_availability_explanation">See all reserved playgrounds: if you don\'t see a reservation, it\'s yours for the taking!</string>
+    <string name="empty_recent_playgrounds">No recent playgrounds found! Make a reservation!</string>
+    <string name="empty_favorite_playgrounds">No favorite playgrounds found! Search for your favorite one and star it!</string>
+    <string name="empty_recently_invited">No recently invited users found! Make a reservation and invite a friend!</string>
+    <string name="empty_friends">No friends found! Search for a user and star them!</string>
+</resources>

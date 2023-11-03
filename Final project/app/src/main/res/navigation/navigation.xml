@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.CalendarFragment"
+        android:label="CalendarFragment" >
+        <action
+            android:id="@+id/action_calendarFragment_to_showReservationFragment"
+            app:destination="@id/showReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_calendarFragment_to_playgroundsAvailabilityFragment"
+            app:destination="@id/playgroundsAvailabilityFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_calendarFragment_to_addReservationFragment"
+            app:destination="@id/addReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_calendarFragment_to_pendingInvitations"
+            app:destination="@id/pendingInvitations"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/showReservationFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.ShowReservationFragment"
+        android:label="ShowReservationFragment" >
+        <argument
+            android:name="reservationId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showReservationFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_showReservationFragment_to_editReservationFragment"
+            app:destination="@id/editReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_showReservationFragment_to_ratingPlaygrounds"
+            app:destination="@id/ratingPlaygrounds"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_showReservationFragment_to_inviteFriends"
+            app:destination="@id/inviteFriends"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReservationFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.AddReservationFragment"
+        android:label="AddReservationFragment" >
+        <argument
+            android:name="dateOfReservation"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_addReservationFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_addReservationFragment_to_seeRatings"
+            app:destination="@id/seeRatings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_addReservationFragment_to_favoritePlaygroundsFragment"
+            app:destination="@id/favoritePlaygroundsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="fromPlaygroundsAvailability"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/editReservationFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.EditReservationFragment"
+        android:label="EditReservationFragment">
+        <argument
+            android:name="resId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editReservationFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_editReservationFragment_to_showReservationFragment"
+            app:destination="@id/showReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/playgroundsAvailabilityFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.PlaygroundsAvailabilityFragment"
+        android:label="PlaygroundsAvailabilityFragment" >
+        <action
+            android:id="@+id/action_playgroundsAvailabilityFragment_to_addReservationFragment"
+            app:destination="@id/addReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_playgroundsAvailabilityFragment_to_showReservationFragment"
+            app:destination="@id/showReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratingPlaygrounds"
+        android:name="it.polito.mad.playgroundsreservations.reservations.RatingPlaygrounds"
+        android:label="RatingPlaygrounds" >
+        <argument
+            android:name="playgroundId"
+            app:argType="string" />
+        <argument
+            android:name="reservationId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ratingPlaygrounds_to_showReservationFragment"
+            app:destination="@id/showReservationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_ratingPlaygrounds_to_seeRatings"
+            app:destination="@id/seeRatings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeRatings"
+        android:name="it.polito.mad.playgroundsreservations.reservations.SeeRatings"
+        android:label="fragment_see_ratings" >
+        <argument
+            android:name="playgroundId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/inviteFriends"
+        android:name="it.polito.mad.playgroundsreservations.reservations.invite_friends.InviteFriends"
+        android:label="InviteFriends" >
+        <argument
+            android:name="reservationId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendingInvitations"
+        android:name="it.polito.mad.playgroundsreservations.reservations.pending_invitations.PendingInvitations"
+        android:label="PendingInvitations" />
+    <fragment
+        android:id="@+id/favoritePlaygroundsFragment"
+        android:name="it.polito.mad.playgroundsreservations.reservations.favorite_playgrounds.ChoosePlayground"
+        android:label="FavoritePlaygroundsFragment" >
+        <argument
+            android:name="canChoosePlayground"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_favoritePlaygroundsFragment_to_seeRatings"
+            app:destination="@id/seeRatings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>

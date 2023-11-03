@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/imageProfileFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:padding="20dp"
+            android:src="@drawable/user_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/secondaryVariant" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp" >
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3.5"
+                    android:numStars="5"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/full_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="74dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bio_icon"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/textBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="@string/bio"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_icon"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/textGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="@string/gender"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calendar_icon"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/textAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="@string/age"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phone_icon"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/textPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="@string/phone"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_icon"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/textLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="@string/location"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textMySports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/my_sports"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold|italic" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                    android:id="@+id/tableMySports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Riga 1 -->
+                    <TableRow
+                        android:id="@+id/basketballRow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/basketballRowIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/basketball_ball" />
+
+                        <TextView
+                            android:id="@+id/basketballRowText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="9dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/sport_basketball" />
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/basketballRowRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"
+                            android:numStars="5"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="20dp"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9" />
+                    </TableRow>
+
+                    <!-- Riga 2 -->
+                    <TableRow
+                        android:id="@+id/volleyballRow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/volleyballRowIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/volleyball_ball"/>
+
+                        <TextView
+                            android:id="@+id/volleyballRowText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginStart="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/sport_volleyball"/>
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/volleyballRowRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"
+                            android:numStars="5"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="20dp"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                    </TableRow>
+
+                    <!-- Riga 3 -->
+                    <TableRow
+                        android:id="@+id/tennisRow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/tennisRowIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/tennis_ball"/>
+
+                        <TextView
+                            android:id="@+id/tennisRowText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginStart="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/sport_tennis"/>
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/tennisRowRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"
+                            android:numStars="5"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="20dp"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                    </TableRow>
+
+                    <!-- Riga 4 -->
+                    <TableRow
+                        android:id="@+id/golfRow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/golfRowIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/golf_ball"/>
+
+                        <TextView
+                            android:id="@+id/golfRowText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginStart="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/sport_golf"/>
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/golfRowRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"
+                            android:numStars="5"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="20dp"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                    </TableRow>
+
+                    <!-- Riga 5 -->
+                    <TableRow
+                        android:id="@+id/footballRow"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/footballRowIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/football_ball"/>
+
+                        <TextView
+                            android:id="@+id/footballRowText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginStart="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="@string/sport_football"/>
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/footballRowRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"
+                            android:numStars="5"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginStart="20dp"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/favoriteCourtsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/secondaryVariant"
+                    android:text="@string/favorite_courts" />
+
+                <Button
+                    android:id="@+id/friendsListButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/secondaryVariant"
+                    android:text="@string/your_friends" />
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:text="@string/logout" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/loadingShowProfileFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/favoriteCourtsFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
