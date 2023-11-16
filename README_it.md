@@ -1,12 +1,12 @@
 # Mobile Application Development Labs
-### Repository per i laboratori del corsi di Mobile Applucation Development
-Il repository contiene i 5 laboratori e il progetto finale per il corso di Mobile Application Development (A. A. 2022/23, Politecnico di Torino). Ogni cartella contiene il PDF della consegna.
+### Repository per i laboratori del corso di Mobile Application Development
+Il repository contiene i 5 laboratori e il progetto finale per il corso di Mobile Application Development (A.A. 2022/23, Politecnico di Torino). Ogni cartella contiene il PDF della consegna.
 
 [🌐 Here in English](README.md)
 
 ## Lab 1: exercizi Kotlin da Exercism
 
-4 esercizi dalla track Kotlin di Exercism: Bank account, Forth, List-Ops e Minesweeper
+4 esercizi dalla track Kotlin di Exercism: Bank account, Forth, List-Ops e Minesweeper.
 
 ## Lab 2-5 e progetto finale: Playgrounds Reservations
 

@@ -5,7 +5,7 @@ The repository contains the 5 laboratories and the final project for the Mobile 
 [🌐 Qui in italiano](README_it.md)
 
 ## Lab 1: Kotlin Exercism exercises
-4 exercises from the Exercism Kotlin track: Bank account, Forth, List-Ops and Minesweeper
+4 exercises from the Exercism Kotlin track: Bank Account, Forth, List-Ops and Minesweeper.
 
 ## Labs 2-5 and final project: Playgrounds Reservations
 The following labs and the final project were aimed at creating an app for making reservations for available playgrounds to play a selection of sports.
